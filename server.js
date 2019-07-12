@@ -36,5 +36,9 @@ app.get('/cpu/:loop_param', async (req,res)=> {
 	res.status(200).send(String(result))
 })
 
+app.get('/loaderio-754efa29e2ece30f7eefaec21a52d0db', (req,res)=> {
+	res.send('loaderio-754efa29e2ece30f7eefaec21a52d0db')
+})
+
 //listening on 3000
 app.listen(3000, ()=> console.log("Server is up and running on ", 3000))
